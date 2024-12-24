@@ -4,6 +4,9 @@ import { useAuth } from '@/hooks/useAuth';
 import { DashboardLayout } from './DashboardLayout';
 import { DashboardHeader } from './DashboardHeader';
 import { UpcomingInterviews } from './widgets/UpcomingInterviews';
+import { NumberOfInterviewsWidget } from './widgets/NumberOfInterviewsWidget';
+import { NumberOfQuestionsWidget } from './widgets/NumberOfQuestionsWidget';
+
 import { InterviewStats } from './widgets/InterviewStats';
 import { RecentActivity } from './widgets/RecentActivity';
 import { CreditsWidget } from './widgets/CreditsWidget';
@@ -26,6 +29,8 @@ export function DashboardPage() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <CreditsWidget />
         <InterviewStats />
+        <NumberOfInterviewsWidget />
+        <NumberOfQuestionsWidget />
       </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-4">
         <UpcomingInterviews className="lg:col-span-2" />

@@ -105,6 +105,7 @@ export function useAuth() {
   }, [storeLogout, navigate, toast]);
 
   return {
+    logout: storeLogout,
     user,
     isAuthenticated: !!user,
     signIn,
